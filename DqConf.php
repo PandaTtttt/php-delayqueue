@@ -7,8 +7,8 @@ class DqConf{
     static $db=array(
         'host'=>'127.0.0.1',
         'port'=>'3306',
-        'user'=>'user',
-        'password'=>'xx',   
+        'user'=>'root',
+        'password'=>'641287',   
         'database'=>'dq',
     );
 
