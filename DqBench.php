@@ -4,7 +4,13 @@ include_once 'DqLoader.php';
 include_once 'DqClient.php';
 include_once 'DqComm.php';   
 
-
+/**
+ * 性能测试 需要安装pthreads拓展
+ * 测试原理：使用多线程模拟并发，在1s内能成功返回请求成功的个数
+ * php DqBench  concurrency  requests
+ * concurrency:并发数
+ * requests： 每个并发产生的请求数
+ */
 class DqBench extends Thread{
     private $name;
     public function __construct($name){

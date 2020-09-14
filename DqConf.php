@@ -35,7 +35,7 @@ class DqConf{
     /**
      * 日志路径
      */
-    static $logPath='/data1/www/logs/dq/';
+    static $logPath='/data/logs/dq/';
 
     /**
      *进程名称不能包含空格

@@ -37,7 +37,7 @@ CREATE TABLE `dq_stat` (
  `id` int(11) NOT NULL AUTO_INCREMENT,
  `u_key` varchar(255) NOT NULL DEFAULT '',
  `num` int(11) NOT NULL DEFAULT '0',
- `create_time` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+ `create_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
  `update_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
  PRIMARY KEY (`id`),
  UNIQUE KEY `u_key` (`u_key`)
